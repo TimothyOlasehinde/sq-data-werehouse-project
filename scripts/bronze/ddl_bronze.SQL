@@ -25,6 +25,7 @@ DROP TABLE IF EXISTS bronze.crm_prd_info;
 
 CREATE TABLE bronze.crm_prd_info(
 	prd_id INT,
+	cat_id VATCAR(50),
 	prd_key VARCHAR(50),
 	prd_nm VARCHAR(50),
 	prd_cost INT,
