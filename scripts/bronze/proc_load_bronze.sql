@@ -129,13 +129,6 @@ CREATE OR REPLACE PROCEDURE
 		RAISE INFO '%', CAST(b_batchstart - b_batchend AS VARCHAR);
 
 		EXCEPTION WHEN OTHERS THEN
-			RAISE INFO '===================================================';
-			RAISE WARNING 'ERROR OCCOURED DURING LOADING BRONZE LAYER';
-			RAISE WARNING '%','Error Message' + ERROR_MESSAGE();
-			RAISE WARNING '%','Error Message' + CAST (ERROR_NUMBER() AS VARCHAR);
-			RAISE WARNING '%','Error Message' + CAST (ERROR_STATE() AS VARCHAR);
-			RAISE INFO '===================================================';
-		
 		END; $$; 
 		
 	
