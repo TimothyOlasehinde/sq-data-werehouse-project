@@ -27,13 +27,13 @@ CREATE OR REPLACE PROCEDURE
 	BEGIN
 		b_batchstart = NOW();
 		
-		RAISE INFO '====================================================';
+		RAISE INFO '=========================================================================================';
 		RAISE INFO 'Loading Bronze Layer';
-		RAISE INFO '====================================================';
+		RAISE INFO '=========================================================================================';
 	
-		RAISE INFO '----------------------------------------------------';
+		RAISE INFO '-----------------------------------------------------------------------------------------';
 		RAISE INFO 'Loading CRM Data';
-		RAISE INFO '----------------------------------------------------';
+		RAISE INFO '-----------------------------------------------------------------------------------------';
 		s_starttime = NOW();
 		
 		RISE INFO '>> Truncating Table: bronze.crm_cust_info';
@@ -47,7 +47,7 @@ CREATE OR REPLACE PROCEDURE
 		e_endtime = NOW();
 		RAISE INFO '>>Load Duration: ';
 		RAISE INFO '%', CAST(e_endtime - s_starttime AS VARCHAR); 
-		RAISE INFO '>> ---------------------------------------------';
+		RAISE INFO '>> ---------------------------------------------------------------------------------------';
 		
 		s_starttime = NOW();
 		RAISE INFO '>> Truncating Table:bronze.crm_prd_info';
@@ -61,7 +61,7 @@ CREATE OR REPLACE PROCEDURE
 		e_endtime = NOW();
 		RAISE INFO '>>Load Duration: ';
 		RAISE INFO '%', CAST(e_endtime - s_starttime AS VARCHAR);
-		RAISE INFO '>> ----------------------------------------------';
+		RAISE INFO '>> ---------------------------------------------------------------------------------------';
 		
 		s_starttime = NOW();
 		RAISE INFO '>> Truncating Table: bronze.crm_sales_details';
@@ -75,11 +75,11 @@ CREATE OR REPLACE PROCEDURE
 		e_endtime = NOW();
 		RAISE INFO '>>Load Duration: ';
 		RAISE INFO '%', CAST(e_endtime - s_starttime AS VARCHAR);
-		RAISE INFO '>> ------------------------------------------------';
+		RAISE INFO '>> --------------------------------------------------------------------------------------';
 	    
-		RAISE INFO '-----------------------------------------------------';
+		RAISE INFO '-----------------------------------------------------------------------------------------';
 		RAISE INFO 'Loading ERP Data';
-		RAISE INFO '-----------------------------------------------------';
+		RAISE INFO '-----------------------------------------------------------------------------------------';
 
 		s_starttime = NOW();
 		RAISE INFO '>> Truncating Table: bronze.erp_cust_az12';
@@ -93,7 +93,7 @@ CREATE OR REPLACE PROCEDURE
 		e_endtime = NOW();
 		RAISE INFO '>>Load Duration: ';
 		RAISE INFO '%', CAST(e_endtime - s_starttime AS VARCHAR);
-		RAISE INFO '>> -----------------------------------------------';
+		RAISE INFO '>> --------------------------------------------------------------------------------------';
 
 		s_starttime = NOW();
 		RAISE INFO '>> Truncating Table: bronze.erp_loc_a101';
@@ -107,7 +107,7 @@ CREATE OR REPLACE PROCEDURE
 		e_endtime = NOW();
 		RAISE INFO '>>Load Duration: ';
 		RAISE INFO '%', CAST(e_endtime - s_starttime AS VARCHAR);
-		RAISE INFO '>> ---------------------------------------------';
+		RAISE INFO '>> --------------------------------------------------------------------------------------';
 
 		s_starttime = NOW();
 		RAISE INFO '>> Truncating Table: bronze.erp_px_cat_g1v2';
@@ -121,7 +121,7 @@ CREATE OR REPLACE PROCEDURE
 		e_endtime = NOW();
 		RAISE INFO '>>Load Duration: ';
 		RAISE INFO '%', CAST(e_endtime - s_starttime AS VARCHAR);
-		RAISE INFO '>> ===================================================';
+		RAISE INFO '>> =====================================================================================';
 
 		b_batchend = NOW();
 		RAISE INFO 'Loading Bronze Layer is completed';
