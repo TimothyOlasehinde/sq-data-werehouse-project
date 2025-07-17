@@ -5,12 +5,30 @@ This project demonstrates a comprehensive data warehouse and analytics solution,
 
 ---
 
+## 📖 Project Overview
+---
+This Project involves:
+1. **Data Architecture**: Designing a Modern Data Warehouse using Medallion Architecture **Bronze**, **Silver**, **Gold layers**.
+2. **ETL Piplines**: Extracting, transforming, and loading data from source systems into the warehouse.
+3. **Data Modeling**: Developing fact and dimention tables optimized for analytical quaries.
+4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
+
+
+🎯 This repository is an excellent resource for professionals and students looking to showcase expertise in 
+- SQL Development
+- Data Architech
+- Data Engineering
+- ETL Pipline Development
+- Data Modeling
+- Data Analytics
+---
+
 ## 🚀 Project Requirments 
 
 ### Building the Data Warehouse (Data Engineering)
 
 #### Objectives 
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
+Designing a Modern Data Warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
 
 #### Specifications
 - **Data Sources **: Import data from two source systens(ERP and CRM) provided as CSV files.
@@ -32,6 +50,14 @@ Develop SQL-based analytics to deliver detailed insigts into:
 These insights empower stakeholders with key business metrics, enabling stategic decision-making 
 
 --
+
+## 🏗️ Data Architecture
+The data architecture for this project follows <edallion Architecture **Bronze**, **Silver**, **Gold** layers:
+
+<img width="2471" height="1801" alt="data_high_level_architecture" src="https://github.com/user-attachments/assets/b6731cd2-b639-4612-85b8-5ccdf9c88be3" />
+1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Fikes into PosgreSQL Database
+2. **Silver layer**: This layer includes data cleaning, standardization and normalization processes to prepare data for analysis.
+3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
 
 ## 🛡️ License 
 
