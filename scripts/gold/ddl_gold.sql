@@ -50,7 +50,7 @@ SELECT
 	pn.prd_nm product_name,
 	pn.cat_id category_id,
 	pc.cat category,
-	pc.subcat subcateogory,
+	pc.subcat subcategory,
 	pc.maintenance, 
 	pn.prd_cost cost,
 	pn.prd_line product_line,
