@@ -1,6 +1,25 @@
--- ==========================================================================
--- Advanced Analytics
--- ==========================================================================
+/* 
+=============================================================================
+ Advanced Analytics
+=============================================================================
+Purpose:
+	- This script aims to evaluate the processed data to produce 
+	  mesurable business insights into key metrics.
+	- It uses the data from the Gold Layer (facts_sales, dim_customers 
+	  & dim_products tables) for its analysis
+
+Highlights: 
+	1. Change-Over-Time
+	2. Cummulative Analysis
+	3. Performance Analysis
+	4. Part-To-Whole
+	5. Data Segmentation
+
+Usage:
+	Run this scrip to gain highlevel insights into the business 
+	performance
+=========================================================================== */
+
 
 -- --------------------------------------------------------------------------
 -- Change-Over-Time (Trends)
